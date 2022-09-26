@@ -8,7 +8,7 @@ def InputCoordinates(finish):
     while start < finish:
         try:
             for i in range(start, finish): 
-                number = float(input(f"Введите координату {xy[i]}: "))
+                number = int(input(f"Введите координату {xy[i]}: "))
                 a[i] = number
                 checkZero = 1 / a[i]
                 if i >= finish - 1:
