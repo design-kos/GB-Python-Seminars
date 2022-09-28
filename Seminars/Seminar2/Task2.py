@@ -5,10 +5,7 @@ def InputNumber(inputText):
     while not isNumber:
         try:
             number = int(input(f"{inputText}"))
-            checkZero = 1 / number
             isNumber = True
-        except ZeroDivisionError:
-            print("Число не должно быть равно 0 ")        
         except ValueError:
             print("Вы ввели не число или число не целое")
     return number
@@ -23,4 +20,4 @@ def Multiplication(n):
 
 number = InputNumber("Введите целое число больше нуля: ")
 multOfNumbers = Multiplication(number)
-print(f"Набор произведений числе от 1 до {number} равно {multOfNumbers}")
+print(f"Набор произведений чисел от 1 до {number} равно {multOfNumbers}")
