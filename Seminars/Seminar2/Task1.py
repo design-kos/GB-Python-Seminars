@@ -1,6 +1,6 @@
 # Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
-def InputNumbers(inputText):
+def InputNumber(inputText):
     isNumber = False
     while not isNumber:
         try:
@@ -17,6 +17,6 @@ def SumOfDigits(number):
             sum += int(i)
     return sum
 
-number = InputNumbers("Введите число: ")
+number = InputNumber("Введите число: ")
 sum = SumOfDigits(number)
 print(f"Сумма цифр числа {number} равна {sum}")
