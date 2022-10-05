@@ -134,7 +134,7 @@ with open(filepath2, 'r') as data:
 print(f"Второй многочлен {polynomial2String}")  
 
 # Создание и вывод результирующего многочлена
-CreatingFile(CreatingString((SumOfTwoPolynomials(polynomial1String, polynomial2String))))
+CreatingFile(CreatingString(SumOfTwoPolynomials(polynomial1String, polynomial2String)))
 path = Path(pathlib.Path.cwd(), 'Seminars', 'Seminar4', 'sumOfPolynomials(Task4).txt')
 filepath = os.path.join(path)
 with open(filepath, 'r') as data:
